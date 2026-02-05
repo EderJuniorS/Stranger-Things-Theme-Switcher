@@ -11,7 +11,7 @@
   
   <br><br>
 
-  <a href="https://ederjuniors.github.io/Landing-Page-no-Mundo-Invertido/">
+  <a href="https://ederjuniors.github.io/Stranger-Things-Theme-Switcher/">
     <img src="https://img.shields.io/badge/🙃_Inverter_Mundo-Live_Experience-critical?style=for-the-badge" alt="Ver Demo">
   </a>
 </div>
@@ -78,7 +78,7 @@ O foco da engenharia foi criar um mecanismo robusto de troca de temas que sincro
 Clone o repositório:
 
 ```bash
-git clone https://github.com/EderJuniorS/Landing-Page-no-Mundo-Invertido.git
+git clone https://github.com/EderJuniorS/Stranger-Things-Theme-Switcher.git
 ```
 
 Abra o arquivo index.html no seu navegador.
