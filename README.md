@@ -1,75 +1,88 @@
-# 🌌 **Mundo Invertido - Uma Experiência Interativa de Stranger Things**  
+<div align="center">
+  <h1>🙃 Stranger Things: Theme Switcher Experience</h1>
+  
+  <p>
+    Landing Page imersiva que explora o conceito de <b>Dual Theming</b> (Light/Dark Mode) 
+    e manipulação de áudio via JavaScript, inspirada na série Stranger Things.
+  </p>
 
-**Explore os mistérios de Hawkins em uma landing page imersiva que alterna entre o mundo real e o Mundo Invertido!**  
+  <img src="https://img.shields.io/github/deployments/EderJuniorS/Landing-Page-no-Mundo-Invertido/github-pages?label=Deploy&style=flat-square&logo=github">
+  <img src="https://img.shields.io/github/last-commit/EderJuniorS/Landing-Page-no-Mundo-Invertido?style=flat-square&color=red">
+  
+  <br><br>
 
----
+  <a href="https://ederjuniors.github.io/Landing-Page-no-Mundo-Invertido/">
+    <img src="https://img.shields.io/badge/🙃_Inverter_Mundo-Live_Experience-critical?style=for-the-badge" alt="Ver Demo">
+  </a>
+</div>
 
-## 🚀 **Sobre o Projeto**  
+<br>
 
-Inspirado na icônica série *Stranger Things*, este projeto é uma landing page interativa que permite aos usuários "inverter" entre o mundo normal e o Mundo Invertido com um simples clique. Desenvolvido como parte do **Bootcamp de Frontend da DIO**, o objetivo foi praticar **HTML, CSS e JavaScript** de forma criativa, aplicando conceitos como:  
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>🌞 Mundo Normal</b></td>
+      <td align="center"><b>🌑 Mundo Invertido</b></td>
+    </tr>
+    <tr>
+      <td><img src="assets/images/projeto_pronto/mundo-normal.png" width="400px"></td>
+      <td><img src="assets/images/projeto_pronto/mundo-invertido.png" width="400px"></td>
+    </tr>
+  </table>
+</div>
 
-- **Troca de temas dinâmica** (light/dark mode)  
-- **Efeitos visuais imersivos**  
-- **Reprodução de áudio temático**  
-- **Design responsivo**  
+<br>
 
----
+## 📋 Sobre o Projeto
 
-## ✨ **Recursos e Funcionalidades**  
+Este projeto foi desenvolvido durante o bootcamp **Ri Happy - Front-end do Zero (DIO)**. O desafio técnico foi transcender uma landing page estática, implementando interatividade completa que altera não apenas o CSS, mas a atmosfera da aplicação.
 
-### 🔄 **Alternância entre Mundos**  
-- **Botão interativo** que muda todo o estilo da página, incluindo:  
-  - Cores e tipografia  
-  - Imagens dos personagens  
-  - Música de fundo (mundo normal vs. Mundo Invertido)  
+O foco da engenharia foi criar um mecanismo robusto de troca de temas que sincroniza **variáveis CSS**, **imagens no DOM** e **trilhas de áudio** simultaneamente ao clique de um botão.
 
-### 🎵 **Atmosfera Sonora**  
-- Trilha sonora automática (*normal-world.mpeg* / *inverted-world.mpeg*)  
-- Volume ajustado para uma experiência imersiva  
+## 🚀 Engenharia & Funcionalidades
 
-### 🖼️ **Galeria de Imagens**  
-- Destaque para cenas e personagens marcantes da série  
-- Efeitos visuais ao passar o mouse  
+- **Dynamic Theme Switching:** Lógica JavaScript que alterna classes no elemento `body`, disparando mudanças globais de estilo (cores, fontes, backgrounds) instantaneamente.
+- **Audio State Management:** Controle da API de Áudio do HTML5. O script verifica qual tema está ativo para pausar a trilha atual e iniciar a trilha correspondente (Mundo Real vs. Invertido) no ponto correto.
+- **DOM Manipulation:** Troca dinâmica de assets de imagem (Logos e Personagens) baseada no estado da aplicação.
+- **Responsive Layout:** Uso de Flexbox e Media Queries para garantir a imersão tanto em Desktop quanto Mobile.
 
-### 📝 **Formulário do Clube D&D**  
-- Simulação de inscrição para o clube de *Dungeons & Dragons*  
-- Estilização temática com efeitos de borda  
+## 🛠️ Tecnologias Utilizadas
 
-### 📱 **Design Responsivo**  
-- Adaptável para diferentes tamanhos de tela  
-- Uso de **Flexbox** e **CSS moderno**  
+- ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) **Estrutura Semântica:** Uso correto de tags de seção, áudio e inputs.
+- ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3) **Estilização:**
+    - **CSS Variables:** (Conceito implícito) Alteração de propriedades visuais em massa.
+    - **Transitions:** Suavização da troca de tema para não ser abrupta.
+    - **Custom Fonts:** Importação de tipografia temática.
+- ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) **Core Logic:**
+    - `classList.toggle()`: Para gerenciamento de estado visual.
+    - `Audio()` Object: Para controle programático de mídia.
+    - `Event Listeners`: Captura de interação do usuário.
 
----
+## 📂 Estrutura do Projeto
 
-## 🛠️ **Tecnologias Utilizadas**  
+```bash
+/
+├── assets/
+│   ├── audio/           # Trilhas sonoras (musica.mp3)
+│   ├── images/          # Assets gráficos (SVG/PNG) e Logos
+│   └── video/           # Backgrounds dinâmicos (se houver)
+├── css/
+│   └── style.css        # Folha de estilos global e temas
+├── js/
+│   └── scripts.js       # Lógica de troca de mundo
+├── index.html           # View Principal
+└── README.md            # Documentação
+```
 
-| **Frontend**  | **Descrição** |  
-|--------------|--------------|  
-| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) | Estrutura semântica |  
-| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) | Estilos com variáveis e temas |  
-| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) | Interatividade e troca de temas |  
+## 🏁 Como Executar Localmente
+Clone o repositório:
 
----
+```bash
+git clone https://github.com/EderJuniorS/Landing-Page-no-Mundo-Invertido.git
+```
 
-## 🎥 **Preview**  
+Abra o arquivo index.html no seu navegador.
 
-### **🌞 Mundo Normal**  
-![Mundo Normal](assets/images/projeto_pronto/mundo-normal.png)
+Clique no botão "Inverter Mundos" e certifique-se de que o som está ativado.
 
-### **🌑 Mundo Invertido**  
-![Mundo Invertido](assets/images/projeto_pronto/mundo-invertido.png) 
-
----
-
-## 📥 **Como Executar**  
-
-1. **Clone o repositório**  
-   ```bash
-   git clone https://github.com/EderJuniorS/Landing-Page-no-Mundo-Invertido.git
-   ```
-2. **Abra o arquivo `index.html`** no navegador  
-3. **Clique no botão "Inverter Mundos"** para alternar entre os temas  
-
----
-
-**🔮 Prepare-se para entrar no Mundo Invertido... se você se atreve!**  
+<div align="center"> Desenvolvido por <a href="https://www.linkedin.com/in/ederjuniormatossilva">Éder Junior</a> durante o Bootcamp da DIO. </div>
